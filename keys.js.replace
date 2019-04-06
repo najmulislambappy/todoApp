@@ -1,0 +1,5 @@
+module.exports ={
+    mongoURI: enter your mongo connection uri
+}
+
+//replace the file extension to .js only
