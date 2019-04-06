@@ -9,7 +9,7 @@ mongoose.connect(keys.mongoURI, () => {
     console.log('connected to mongodb');
 });
 
-app.listen(5000, () => console.log(`Example app listening on port 5000!`))
+app.listen(process.env.PORT || 5000, () => console.log(`Example app listening on port 5000!`))
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }));
 
